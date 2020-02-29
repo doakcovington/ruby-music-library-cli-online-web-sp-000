@@ -7,7 +7,8 @@ class Song
 
   def initialize(name, artist = nil)
     @name = name
-    #@artist = artist
+    @artist = artist
+    artist.songs << self unless artist.songs.include?(self)
     save
   end
 
