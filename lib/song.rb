@@ -30,6 +30,6 @@ class Song
   end
 
   def add_song(artist)
-
+    artist.self = artist unless artist.self
   end
 end
