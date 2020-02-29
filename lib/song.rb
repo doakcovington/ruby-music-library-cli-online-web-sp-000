@@ -29,7 +29,4 @@ class Song
     song
   end
 
-  def artist(song)
-
-  end
 end
