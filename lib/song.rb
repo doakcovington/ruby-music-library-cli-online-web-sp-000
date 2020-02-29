@@ -29,7 +29,7 @@ class Song
     song
   end
 
-  def add_song
+  def add_song(artist)
 
   end
 end
