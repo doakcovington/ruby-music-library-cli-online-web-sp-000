@@ -30,6 +30,6 @@ class Song
   end
 
   def artist(song)
-
+    artist.song = song
   end
 end
