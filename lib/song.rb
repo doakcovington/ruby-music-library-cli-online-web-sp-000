@@ -6,7 +6,9 @@ class Song
 
   def initialize(name, artist = nil)
     @name = name
-    @artist = artist
+    if artist != nil
+      self.artist = artist
+    end
     save
   end
 
@@ -26,11 +28,6 @@ class Song
     song = self.new(name)
     song.save
     song
-  end
-
-  def artist=(artist)
-    @artist = artist
-    artist.songs << self unless artist.songs.include?(self) #pushes song to songs array if it doens't exist
   end
 
 end
