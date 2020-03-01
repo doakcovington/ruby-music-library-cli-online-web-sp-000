@@ -67,7 +67,7 @@ class Song
     parts = filename.split("-")
     artist = parts[0]
     song = parts[1]
-    binding.pry
+    #binding.pry
   end
 
 end
