@@ -67,7 +67,7 @@ class Song
     parts = filename.split("-")
     self.artist = parts[0]
     self.song = parts[1]
-    genre.name = parts[2]
+    self.genre = parts[2]
     #binding.pry
   end
 
