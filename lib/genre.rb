@@ -1,5 +1,5 @@
 class Genre
-  attr_accessor :name, :songs
+  attr_accessor :name, :songs, :artists
 
   @@all = []
 
@@ -29,6 +29,10 @@ class Genre
   def add_song(song)
     song.genre = self unless song.genre #create new object unless it already exists
     songs << song unless songs.include?(song) #add object to songs array unless its already in array
+  end
+
+  def artists
+
   end
 
 end
