@@ -45,12 +45,6 @@ class Song
     self.class.all << self
   end
 
-  def self.create(name)
-    song = new(name)
-    song.save
-    song
-  end
-
   def self.find_by_name(name)
     #finds a song instance in @@all by the name of the property of the song
     all.find{|song| song.name == name}
@@ -62,6 +56,14 @@ class Song
     find_by_name(name) || create(name)
     binding.pry
   end
+
+
+  def self.create(name)
+    song = new(name)
+    song.save
+    song
+  end
+
 
 
 end
