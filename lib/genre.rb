@@ -27,8 +27,8 @@ class Genre
   end
 
   def add_song(song)
-    song.genre = self unless song.genre
-    songs << song unless songs.include?(song)
+    song.genre = self unless song.genre #create new object unless it already exists
+    songs << song unless songs.include?(song) #add object to songs array unless its already in array
   end
 
 end
