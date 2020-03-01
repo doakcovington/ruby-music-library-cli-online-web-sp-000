@@ -59,7 +59,7 @@ class Song
   def self.find_or_create_by_name(name)
     #returns an existing song with the provided name if one exists in @@all
     #creates song if an existing match is not found
-    if @@all.include?(name)
+    if self.find_by_name(name)
       self.find_by_name(name)
     else
       self.create(name)
