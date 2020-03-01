@@ -43,6 +43,7 @@ class Song
 
   def save
     @@all << self
+    @@all.uniq
   end
 
   def self.create(name)
