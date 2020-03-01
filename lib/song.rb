@@ -53,7 +53,7 @@ class Song
 
   def self.find_by_name(name)
     #finds a song instance in @@all by the name of the property of the song
-    @@all.find{|song| song.name == name}
+    self.find{|song| song.name == name}
   end
 
   def self.find_or_create_by_name(name)
@@ -62,7 +62,7 @@ class Song
     if @@all.include?(name)
       self.find_by_name(name)
     else
-      self.create(name)  
+      self.create(name)
     end
   end
 
