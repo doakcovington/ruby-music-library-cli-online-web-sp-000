@@ -32,8 +32,8 @@ class Artist
     songs << song unless songs.include?(song)
   end
 
-  def genres
-
+  def genres(genre)
+    @genres << genre
   end
 
 end
