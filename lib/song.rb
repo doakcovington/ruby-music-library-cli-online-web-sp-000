@@ -61,6 +61,8 @@ class Song
     #creates song if an existing match is not found
     if @@all.include?(name)
       self.find_by_name(name)
+    else
+      self.create(name)  
     end
   end
 
