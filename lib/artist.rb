@@ -33,8 +33,7 @@ class Artist
   end
 
   def genres(genre)
-    genre.artist = self unless genre.artist
-    genres << genre unless songs.include?(genre)
+
   end
 
 end
