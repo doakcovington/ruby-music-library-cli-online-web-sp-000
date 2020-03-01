@@ -63,8 +63,9 @@ class Song
     song
   end
 
-  def self.new_from_filename(name)
+  def self.new_from_filename(filename)
     binding.pry
+    parts = filename.split
   end
 
 end
