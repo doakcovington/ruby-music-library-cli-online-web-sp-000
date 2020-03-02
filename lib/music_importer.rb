@@ -12,8 +12,8 @@ class MusicImporter
     Dir.glob("#{path}/*").map{|file| file.gsub("#{path}/", '')}
   end
 
-  def import(filename)
-    files << Song.create_from_filename(filename)
+  def import
+    files << Song.create_from_filename
   end
 
 end
