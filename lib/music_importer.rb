@@ -9,7 +9,7 @@ class MusicImporter
   end
 
   def files
-    @files = Dir.glob("#{path}/*").map{|file| file.gsub("#{path}/", '')}
+    Dir.glob("#{path}/*").map{|file| file.gsub("#{path}/", '')}
   end
 
   def import
