@@ -67,7 +67,7 @@ class Song
     artist, song, genre = filename.split(" - ")
     artist = Artist.find_or_create_by_name(artist)
     genre = Genre.find_or_create_by_name(genre)
-    new(song, artist, genre)
+    Song.new(song, artist, genre)
     binding.pry
   end
 
