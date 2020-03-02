@@ -86,7 +86,7 @@ class Song
     #binding.pry
     genre_name = Genre.find_or_create_by_name(genre)
     self.new(song, artist_name, genre_name)
-    binding.pry
+    #binding.pry
   end
 
 end
