@@ -69,8 +69,9 @@ class Song
     song = parts[1]
     genre = parts[2]
     genre.slice! ".mp3"
-    Artist.new = find_or_create_by_name(artist)
-    Genre.new = find_or_create_by_name(genre)
+    artist_name = Artist.find_or_create_by_name(artist)
+    genre_name = Genre.find_or_create_by_name(genre)
+    self.new
     binding.pry
   end
 
