@@ -14,6 +14,7 @@ class MusicImporter
 
   def import(filename)
     self.create_from_filename(filename)
+    binding.pry
   end
 
 end
