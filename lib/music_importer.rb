@@ -13,8 +13,7 @@ class MusicImporter
   end
 
   def import(filename)
-    Song.create_from_filename(filename)
-    binding.pry 
+    self.create_from_filename(filename)
   end
 
 end
