@@ -68,6 +68,7 @@ class Song
     artist = parts[0]
     song = parts[1]
     genre = parts[2]
+    genre.slice! ".mp3"
     binding.pry
   end
 
