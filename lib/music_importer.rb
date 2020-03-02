@@ -10,7 +10,7 @@ class MusicImporter
     Dir.glob("#{path}/*").map{|file| file.gsub("#{path}/", '')}
   end
 
-  def import
+  def import(filename)
     Song.create_from_filename
   end
 
