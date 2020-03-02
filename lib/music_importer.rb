@@ -13,7 +13,8 @@ class MusicImporter
   end
 
   def import
-    files << Song.create_from_filename(filename)
+    files << Song.create_from_filename
+    binding.pry
   end
 
 end
