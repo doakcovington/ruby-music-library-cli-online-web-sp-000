@@ -77,7 +77,16 @@ class Song
   end
 
   def self.create_from_filename(filename)
-    binding.pry
+    parts = filename.split(" - ")
+    artist = parts[0]
+    song = parts[1]
+    genre = parts[2]
+    genre.slice! ".mp3"
+    artist_name = Artist.find_or_create_by_name(artist)
+    #binding.pry
+    genre_name = Genre.find_or_create_by_name(genre)
+    self.new(song, artist_name, genre_name)
+    #binding.pry
   end
 
 end
