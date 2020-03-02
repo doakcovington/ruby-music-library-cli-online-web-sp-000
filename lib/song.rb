@@ -70,6 +70,7 @@ class Song
     genre = parts[2]
     genre.slice! ".mp3"
     artist_name = Artist.create(artist)
+    binding.pry
     genre_name = Genre.genre(genre)
     self.new(song, artist_name, genre_name)
     binding.pry
